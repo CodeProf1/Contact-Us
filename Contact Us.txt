@@ -1,0 +1,278 @@
+<div class="contact-us">
+
+  <div class="social-media">
+
+    <h3>Contact Us On Social Media</h3>
+
+    <div class="contact-us-icons">
+
+      <!-- Facebook Icon -->
+
+      <div class="facebook-icon">
+        <a href="https://www.facebook.com/profile.php?id=61577399695219" target="_blank">
+          <i>f</i>
+        </a>
+      </div>
+
+      <!-- Youtube Icon -->
+
+      <div class="youtube-icon">
+        <a href="https://www.youtube.com/channel/UC8hbCUinzJ-DmxGYkPdtp8A" target="_blank">
+          <div class="youtube-logo-container">
+            <i></i>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="contact-us-container">
+
+    <form name="contact-form">
+
+      <!-- Start Name -->
+
+      <input id="ContactForm1_contact-form-name" type="text" name="name" placeholder="Name" autocomplete="off" />
+
+      <!-- End Name -->
+
+      <!-- Start Email -->
+
+      <input id="ContactForm1_contact-form-email" type="email" name="email" placeholder="Email" />
+
+      <!-- End Email -->
+
+      <!-- Start Message -->
+
+      <textarea id="ContactForm1_contact-form-email-message" name="email-message" placeholder="Message"></textarea>
+
+      <!-- End Message -->
+
+      <input id="ContactForm1_contact-form-submit" type="submit" value="Submit" />
+      
+      <br>
+      
+      <div style="max-width: 100%; text-align: center; width: 100%">
+        <div id="ContactForm1_contact-form-error-message"></div>
+        <div id="ContactForm1_contact-form-success-message"></div>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<style>
+
+    /* Start Contact Us */
+
+.contact-us {
+    display: flex;
+    flex: 1 1 100%;
+  	height:480px;
+    flex-wrap: wrap;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.contact-us .social-media {
+    flex: 1 1 50%;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.contact-us .social-media h3 {
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.contact-us .social-media .facebook-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #0d47a1;
+    color: #FFF;
+    margin-right: 5px;
+}
+
+.contact-us .social-media .facebook-icon:hover {
+    opacity: 0.85;
+}
+
+.contact-us .social-media .facebook-icon a {
+  	display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.contact-us .social-media .facebook-icon a i {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    font-size: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contact-us .social-media .youtube-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #ff0000;
+    color: #FFF;
+}
+
+.contact-us .social-media .youtube-icon:hover {
+    opacity: 0.85;
+}
+
+.contact-us .social-media .youtube-icon a {
+  	display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.contact-us .social-media .youtube-icon a .youtube-logo-container {
+    background-color: #FFF;
+    width: 19px;
+    height: 13px;
+    border-radius: 5px;
+    position: absolute;
+    top: 32%;
+    left: 25.1%;
+    z-index: 1;
+}
+
+.contact-us .social-media .youtube-icon a .youtube-logo-container i {
+    background-color: transparent;
+    border-left: 5px solid #FF0000;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+    z-index: 2;
+}
+
+.contact-us .contact-us-container {
+    flex: 1 1 50%;
+}
+
+.contact-us .contact-us-container form {
+    background-color: #FFF;
+    width: 100%;
+  	height:415px;
+    padding: 31px 25px 30px 25px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+
+.contact-us .contact-us-container form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.contact-us .contact-us-container form textarea {
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    height: 124.5px;
+}
+
+.contact-us .contact-us-container form input[type="submit"] {
+    background-color: #258bcf;
+    color: #FFF;
+    display: block;
+    width: 150px;
+  	height: 42px;
+    text-align: center;
+    padding: 8px 45px;
+    margin: 0 auto;
+}
+
+.contact-us .contact-us-container .success-message {
+    text-align: center;
+
+#ContactForm1_contact-form-error-message {
+    background-color: #ffd0d0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#ContactForm1_contact-form-successs-message {
+    background-color: #53e7be;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+}  
+ 
+
+/* Mobile & Tablet Rules */
+
+@media (max-width:767px) {
+
+.contact-us {
+    flex-direction: column;
+    padding: 20px 15px;
+}
+
+.contact-us .social-media {
+    flex: auto;
+    width: 100%;
+    order: 2;
+    margin-bottom: 19px;
+}
+
+.contact-us .contact-us-container {
+    flex: auto;
+    width: 100%;
+    order: 1;
+    margin-bottom: 35px;
+}
+
+}
+
+/* Small Screen Rules */
+
+@media (min-width:768px) and (max-width:991px) {
+
+.contact-us {
+    flex-direction: column;
+    padding: 20px 15px;
+}
+
+.contact-us .social-media {
+    flex: auto;
+    width: 100%;
+    order: 2;
+    margin-bottom: 19px;
+}
+
+.contact-us .contact-us-container {
+    flex: auto;
+    width: 100%;
+    order: 1;
+    margin-bottom: 35px;
+}
+
+}
+
+/* End Contact Us */
+    
+  </style>
